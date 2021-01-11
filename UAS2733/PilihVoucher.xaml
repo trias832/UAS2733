@@ -1,0 +1,22 @@
+﻿<Window x:Class="UAS2733.PilihVoucher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UAS2733"
+        mc:Ignorable="d"
+        Title="PilihVoucher" Height="271" Width="411">
+    <Grid Margin="0,0,-84,-48">
+        <Label Content="Voucher Yang Tersedia" HorizontalAlignment="Left" Margin="16,22,0,0" VerticalAlignment="Top" Width="147"/>
+        <ListBox x:Name="DaftarVoucher" HorizontalAlignment="Left" Height="156" Margin="16,61,0,0" VerticalAlignment="Top" Width="371" SelectionChanged="DaftarVoucherSelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,1">
+                        <TextBlock Grid.Row="0" Text="{Binding title}" TextAlignment="Left" FontSize="16" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>
