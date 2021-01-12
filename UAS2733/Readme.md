@@ -45,8 +45,8 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
  Pada ``Penawaran.xaml.cs `` terdapat code seperti diatas yang berfungsi untuk membuat list item yang nanti akan ditambahkkan ke listbox.
 Untuk menambahkan data ke listbox item dan voucher ke masing-masing listbox maka terdapat perintah  
 
-`` listBoxPesanan.ItemsSource = controller.getSelectedItems();
-            listBoxPakaiPromo.ItemsSource = controller.getSelectedPromos(); ``
+``             listBoxPesanan.ItemsSource = controller.getSelectedItems();
+            listBoxPakaiPromo.ItemsSource = controller.getSelectedPromos();``
    
 pada `` MainWindow.xaml.cs``
 untuk kode pengkontrolan dari keranjang belanja dilakukan oleh``MainWindoController.cs``
