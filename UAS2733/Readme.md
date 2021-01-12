@@ -43,6 +43,7 @@ private void generateContentPenawaran()
 Untuk menambahkan data ke listbox item dan voucher ke masing-masing listbox maka terdapat perintah  
 
 `` listBoxPesanan.ItemsSource = controller.getSelectedItems();
+
    listBoxPakaiVoucher.ItemsSource = controller.getSelectedVouchers();``
    
 pada `` MainWindow.xaml.cs``
