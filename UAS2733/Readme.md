@@ -1,7 +1,7 @@
 ﻿## OrderFood
 Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harga yang dipesan oleh pembeli 
 
-# Sungsi
+# Fungsi
 - User dapat melihat daftar makanan yang ditawarkan
 - User dapat memasukkan atau menghapus makanan pilihan ke dalam keranjang
 - User dapat melihat subtotal makanan yang terdapat pada keranjang
@@ -41,11 +41,10 @@ private void generateContentPenawaran()
 
  Pada ``Penawaran.xaml.cs `` terdapat code seperti diatas yang berfungsi untuk membuat list item yang nanti akan ditambahkkan ke listbox.
 Untuk menambahkan data ke listbox item dan voucher ke masing-masing listbox maka terdapat perintah  
-    `` 
-    
-listBoxPesanan.ItemsSource = controller.getSelectedItems();
-            listBoxPakaiVoucher.ItemsSource = controller.getSelectedVouchers();
 
+`` listBoxPesanan.ItemsSource = controller.getSelectedItems();
+   listBoxPakaiVoucher.ItemsSource = controller.getSelectedVouchers();``
+   
 pada `` MainWindow.xaml.cs``
 untuk kode pengkontrolan dari keranjang belanja dilakukan oleh``MainWindoController.cs``
 Didalam ``PilihVoucher.xaml.cs`` terdapat kode untuk membuat object voucher yang nantinya akan dimasukkan ke listbox
