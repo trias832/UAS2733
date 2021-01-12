@@ -18,7 +18,7 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 
 # Penjelasan 
 
-`` 
+'' 
 private void generateContentPenawaran()
         {
             Item drink1 = new Item("Coffe Late", 30000);
@@ -37,7 +37,7 @@ private void generateContentPenawaran()
             Penawarancontroller.addItem(drink5);
              listPenawaran.Items.Refresh();
         }
-``
+''
 
  Pada ``Penawaran.xaml.cs `` terdapat code seperti diatas yang berfungsi untuk membuat list item yang nanti akan ditambahkkan ke listbox.
 Untuk menambahkan data ke listbox item dan voucher ke masing-masing listbox maka terdapat perintah  
