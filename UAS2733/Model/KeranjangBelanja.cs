@@ -8,7 +8,7 @@ namespace UAS2733.Model
     class KeranjangBelanja
     {
         List<Item> itemBelanja;
-        List<Voucher> itemVoucher;
+        List<Promo> itemPromo;
         int maksimal = 1;
         Payment payment;
         OnKeranjangBelanjaChangedListener callback;
@@ -17,7 +17,7 @@ namespace UAS2733.Model
         {
             this.payment = payment;
             this.itemBelanja = new List<Item>();
-            this.itemVoucher = new List<Voucher>();
+            this.itemPromo = new List<Promo>();
             this.callback = callback;
         }
         public List<Item> getItems()
@@ -25,9 +25,9 @@ namespace UAS2733.Model
             return this.itemBelanja;
         }
 
-        public List<Voucher> getVouchers()
+        public List<Promo> getPromo()
         {
-            return this.itemVoucher;
+            return this.itemPromo;
         }
 
 
@@ -38,12 +38,12 @@ namespace UAS2733.Model
             calculateSubTotal();
         }
 
-        public void addVoucher(Voucher item)
+        public void addPromo(Promo item)
         {
             if (maksimal == 1)
             {
-                this.itemVoucher.Add(item);
-                this.callback.addVoucherSucceed();
+                this.itemPromo.Add(item);
+                this.callback.addPromoSucceed();
                 maksimal = 0;
                 calculateSubTotal();
             }
@@ -53,10 +53,10 @@ namespace UAS2733.Model
             }
         }
 
-        public void removeVoucher(Voucher item)
+        public void removePromo(Promo item)
         {
-            this.itemVoucher.Remove(item);
-            this.callback.removeVoucherSucceed();
+            this.itemPromo.Remove(item);
+            this.callback.removePromoSucceed();
             maksimal = 1;
             calculateSubTotal();
         }
@@ -77,12 +77,12 @@ namespace UAS2733.Model
                 subtotal += item.price;
             }
 
-            foreach (Voucher voucher in itemVoucher)
+            foreach (Promo promo in itemPromo)
             {
-                if (voucher.discInPercent != 0)
+                if (promo.discInPercent != 0)
                 {
 
-                    if (voucher.discInPercent == 30)
+                    if (promo.discInPercent == 30)
                     {
                         if (subtotal >= 100000)
                         {
@@ -90,18 +90,18 @@ namespace UAS2733.Model
                         }
                         else
                         {
-                            potongan -= subtotal * (voucher.discInPercent / 100);
+                            potongan -= subtotal * (promo.discInPercent / 100);
                         }
                     }
                     else
                     {
-                        potongan -= subtotal * (voucher.discInPercent / 100);
+                        potongan -= subtotal * (promo.discInPercent / 100);
                     }
                 }
 
-                if (voucher.disc != 0)
+                if (promo.disc != 0)
                 {
-                    potongan -= voucher.disc;
+                    potongan -= promo.disc;
                 }
             }
             payment.updateTotal(subtotal, potongan);
@@ -115,7 +115,7 @@ namespace UAS2733.Model
         void removeItemSucceed();
         void addItemSucceed();
 
-        void removeVoucherSucceed();
-        void addVoucherSucceed();
+        void removePromoSucceed();
+        void addPromoSucceed();
     }
 }

@@ -1,108 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="UAS2733.Controller.MainWindowController">
-    <Position X="5.75" Y="4.75" Width="1.5" />
+    <Position X="4" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAQCAACAAAAAAAAEAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAAAIAAACAACAAiAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Controller\MainWindowController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="UAS2733.Controller.PenawaranController" Collapsed="true">
-    <Position X="10.75" Y="3.5" Width="1.5" />
+  <Class Name="UAS2733.Controller.PenawaranController">
+    <Position X="9.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Controller\PenawaranController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="UAS2733.Controller.VoucherController">
-    <Position X="9.25" Y="7.75" Width="1.5" />
+  <Class Name="UAS2733.Controller.PromoController">
+    <Position X="7.5" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
-      <FileName>Controller\VoucherController.cs</FileName>
+      <FileName>Controller\PromoController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UAS2733.Model.Item">
-    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Position X="5.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UAS2733.Model.KeranjangBelanja">
-    <Position X="9" Y="0.5" Width="1.5" />
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgDAAAAAAAAAEAAEAACAAAKAAAAAAAAAAAIAgEAAAIA=</HashCode>
+      <HashCode>AgBAAAAAAAAAAAAEAACAACCAABAAAAAAAAIAAEAAQYA=</HashCode>
       <FileName>Model\KeranjangBelanja.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UAS2733.Model.Payment">
-    <Position X="7.5" Y="4.75" Width="1.5" />
+    <Position X="5.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>Model\Payment.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="UAS2733.Model.Voucher">
-    <Position X="7.5" Y="7.75" Width="1.5" />
+  <Class Name="UAS2733.Model.Promo">
+    <Position X="5.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEA=</HashCode>
-      <FileName>Model\Voucher.cs</FileName>
+      <FileName>Model\Promo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UAS2733.App">
-    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UAS2733.MainWindow" BaseTypeListCollapsed="true">
-    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAIAAACAUAAAIAAQCAABQAASAAAAAAAAIABAA=</HashCode>
+      <HashCode>AARAAAAAIAAAAAEBAAICAQCAIBQACCAAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="UAS2733.Penawaran" BaseTypeListCollapsed="true">
-    <Position X="9.25" Y="4.75" Width="1.5" />
+    <Position X="7.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAAAAAEEAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Penawaran.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="UAS2733.PilihVoucher" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="7.75" Width="1.5" />
+  <Class Name="UAS2733.PilihPromo" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8" Width="1.5" />
     <NestedTypes>
-      <Interface Name="UAS2733.PilihVoucher.OnPilihVoucherChangedListener" Collapsed="true">
+      <Interface Name="UAS2733.PilihPromo.OnPilihPromoChangedListener" Collapsed="true">
         <TypeIdentifier>
-          <NewMemberFileName>PilihVoucher.xaml.cs</NewMemberFileName>
+          <NewMemberFileName>PilihPromo.xaml.cs</NewMemberFileName>
         </TypeIdentifier>
       </Interface>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAQAAgAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAABA=</HashCode>
-      <FileName>PilihVoucher.xaml.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAEAAAAIAAAAAAAAAAAAEAIAA=</HashCode>
+      <FileName>PilihPromo.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="UAS2733.Model.OnKeranjangBelanjaChangedListener">
-    <Position X="6" Y="10.75" Width="1.5" />
+    <Position X="3.75" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAQAAAAAAACAAAAAAAAIAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAQAAIAAAACAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\KeranjangBelanja.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="UAS2733.Model.OnPaymentChangedListener">
-    <Position X="7.75" Y="10.75" Width="1.5" />
+    <Position X="5.5" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Payment.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="UAS2733.OnPenawaranChangedListener">
-    <Position X="9.5" Y="10.75" Width="1.5" />
+    <Position X="7.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Penawaran.xaml.cs</FileName>

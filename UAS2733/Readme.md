@@ -14,7 +14,7 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 - Simulasi 2
 ![Simulasi2](Simulasi2.png)
 - Simulasi 3
- ![Simulasi3](Simulasi3.png)
+![Simulasi3](Simulasi3.png)
 
 # Penjelasan 
 

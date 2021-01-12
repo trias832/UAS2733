@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UAS2733.Controller;
 using UAS2733.Model;
-using static UAS2733.PilihVoucher;
+using static UAS2733.PilihPromo;
 
 namespace UAS2733
 {
@@ -23,7 +23,7 @@ namespace UAS2733
     /// </summary>
     public partial class MainWindow : Window,
         OnPenawaranChangedListener,
-        OnPilihVoucherChangedListener,
+        OnPilihPromoChangedListener,
         OnPaymentChangedListener,
         OnKeranjangBelanjaChangedListener
     {
@@ -41,7 +41,7 @@ namespace UAS2733
             controller = new MainWindowController(keranjangBelanja);
 
             listBoxPesanan.ItemsSource = controller.getSelectedItems();
-            listBoxPakaiVoucher.ItemsSource = controller.getSelectedVouchers();
+            listBoxPakaiPromo.ItemsSource = controller.getSelectedPromos();
 
             initializeView();
 
@@ -77,14 +77,14 @@ namespace UAS2733
             }
         }
 
-        private void listBoxPakaiVoucher_ItemClicked(object sender, MouseButtonEventArgs e)
+        private void listBoxPakaiPromo_ItemClicked(object sender, MouseButtonEventArgs e)
         {
             if (MessageBox.Show("Kamu ingin membatalkan voucher ini?",
                    "Konfirmasi", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 ListBox listBox = sender as ListBox;
-                Voucher item = listBox.SelectedItem as Voucher;
-                controller.deleteSelectedVoucher(item);
+                Promo item = listBox.SelectedItem as Promo;
+                controller.deleteSelectedPromo(item);
             }
         }
 
@@ -105,28 +105,29 @@ namespace UAS2733
             listBoxPesanan.Items.Refresh();
         }
 
-        public void removeVoucherSucceed()
+        public void removePromoSucceed()
         {
-            listBoxPakaiVoucher.Items.Refresh();
+            listBoxPakaiPromo.Items.Refresh();
         }
 
-        public void addVoucherSucceed()
+        public void addPromoSucceed()
         {
-            listBoxPakaiVoucher.Items.Refresh();
+            listBoxPakaiPromo.Items.Refresh();
         }
 
-        private void OnPilihVoucherClicked(object sender, RoutedEventArgs e)
+        private void OnPilihPromoClicked(object sender, RoutedEventArgs e)
         {
-            PilihVoucher pilihVoucherWindow = new PilihVoucher();
-            pilihVoucherWindow.SetOnItemSelectedListener(this);
-            pilihVoucherWindow.Show();
+            PilihPromo pilihPromoWindow = new PilihPromo();
+            pilihPromoWindow.SetOnItemSelectedListener(this);
+            pilihPromoWindow.Show();
         }
 
-        public void OnPilihVoucherChangedListener(Voucher item)
+        public void OnPilihPromoChangedListener(Promo item)
         {
-            controller.addVoucher(item);
+            controller.addPromo(item);
         }
 
 
     }
+
 }

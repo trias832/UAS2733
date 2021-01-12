@@ -5,21 +5,21 @@ using UAS2733.Model;
 
 namespace UAS2733.Controller
 {
-    class VoucherController
+    class PromoController
     {
-        private List<Voucher> items;
+        private List<Promo> items;
 
-        public VoucherController()
+        public PromoController()
         {
-            items = new List<Voucher>();
+            items = new List<Promo>();
         }
 
-        public void addItem(Voucher item)
+        public void addItem(Promo item)
         {
             this.items.Add(item);
         }
 
-        public List<Voucher> getItems()
+        public List<Promo> getItems()
         {
             return this.items;
         }

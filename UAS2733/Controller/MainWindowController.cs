@@ -19,18 +19,18 @@ namespace UAS2733.Controller
             this.keranjangBelanja.addItem(item);
         }
 
-        public void addVoucher(Voucher item)
+        public void addPromo(Promo item)
         {
-            this.keranjangBelanja.addVoucher(item);
+            this.keranjangBelanja.addPromo(item);
         }
         public List<Item> getSelectedItems()
         {
             return this.keranjangBelanja.getItems();
         }
 
-        public List<Voucher> getSelectedVouchers()
+        public List<Promo> getSelectedPromos()
         {
-            return this.keranjangBelanja.getVouchers();
+            return this.keranjangBelanja.getPromo();
         }
 
         public void deleteSelectedItem(Item item)
@@ -38,9 +38,9 @@ namespace UAS2733.Controller
             this.keranjangBelanja.removeItem(item);
         }
 
-        public void deleteSelectedVoucher(Voucher item)
+        public void deleteSelectedPromo(Promo item)
         {
-            this.keranjangBelanja.removeVoucher(item);
+            this.keranjangBelanja.removePromo(item);
         }
 
 
