@@ -21,16 +21,16 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 # Penjelasan 
 Didalam folder Controller terdapat 3 kelas yaitu :
 
-- ``MainWindowController.cs`` yang berfungsi untuk  penambahan item dan promo,menghapus item dan promo, serta memperoleh list data dari item yang dibeli dan promo yang digunakan.
-- ``PenawaranController.cs`` berfungsi untuk penambahan item yang dipih kedalam list,mengembalikan nilai pada list,serta menyimpan data yang telah ditambahkan.
-- ``PromoController.cs``berfungsi untuk penambahan promo yang dipilih kedalam lis,mengembalikan nilai pada list,dan untuk menyimpan data yang telah ditambahkan.
+- MainWindowController yang berfungsi untuk  penambahan item dan promo,menghapus item dan promo, serta memperoleh list data dari item yang dibeli dan promo yang digunakan.
+- PenawaranController.cs berfungsi untuk penambahan item yang dipih kedalam list,mengembalikan nilai pada list,serta menyimpan data yang telah ditambahkan.
+- PromoController.cs berfungsi untuk penambahan promo yang dipilih kedalam lis,mengembalikan nilai pada list,dan untuk menyimpan data yang telah ditambahkan.
 
 
 Didalam folder model terdapat 4 kelas yaitu
 
 
-- ``Item.cs`` berfungsi untuk menampung item
-- ``KeranjangBuah.cs`` digunakan untuk menmpung item serta promo yang dipilih dan logiga perhitungan subtotal serta promo
+- Item.cs berfungsi untuk menampung item
+- KeranjangBuah.cs digunakan untuk menmpung item serta promo yang dipilih dan logiga perhitungan subtotal serta promo
 ```csharp
     private void calculateSubTotal()
         {
@@ -72,15 +72,15 @@ Didalam folder model terdapat 4 kelas yaitu
 
 
         }
-        ```
+ ```
  <br>       
- - ``Payment.cs`` digunakan untuk menampung total dari pembayaran item 
- - ``Promo.cs`` digunakan untuk menampung promo
+ - Payment.cs digunakan untuk menampung total dari pembayaran item 
+ - Promo.cs digunakan untuk menampung promo
  
 Untuk mengatur logika dari tampilannya  terdapat:
  
  
- - ``MainWindow.xaml.cs`` ada inisialisasi dan pembuatan beberapa instance serta kode untuk memasukkan data list promo dan item  kedalam listbox
+ - MainWindow.xaml.cs ada inisialisasi dan pembuatan beberapa instance serta kode untuk memasukkan data list promo dan item  kedalam listbox
  ```csharp 
    public MainWindow()
         {
@@ -100,7 +100,7 @@ Untuk mengatur logika dari tampilannya  terdapat:
         }
  ```
  <br>
-- ``Penawaran.xaml.cs`` terdapat pembuatan object item yang akan ditambahkan kedalam listbox
+- Penawaran.xaml.cs terdapat pembuatan object item yang akan ditambahkan kedalam listbox
 ```csharp    
    private void generateContentPenawaran()
         {
@@ -125,7 +125,7 @@ Untuk mengatur logika dari tampilannya  terdapat:
             listPenawaran.Items.Refresh();
         }
 ```
-- ``PilihPromo.xaml.cs``terdapat pembuatan object promo yang akan ditambahkan kedalam list
+- PilihPromo.xaml.cs terdapat pembuatan object promo yang akan ditambahkan kedalam list
 <br>
 ```csharp
     private void generateListPromo()
