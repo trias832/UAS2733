@@ -20,8 +20,11 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 
 # Penjelasan 
 - Didalam folder Controller terdapat 3 kelas yaitu :
--- ``MainWindowController.cs`` yang berfungsi untuk  penambahan item dan promo,menghapus item dan promo, serta memperoleh list data dari item yang dibeli dan promo yang digunakan.
+
+== ``MainWindowController.cs`` yang berfungsi untuk  penambahan item dan promo,menghapus item dan promo, serta memperoleh list data dari item yang dibeli dan promo yang digunakan.
+
 -- ``PenawaranController.cs`` berfungsi untuk penambahan item yang dipih kedalam list,mengembalikan nilai pada list,serta menyimpan data yang telah ditambahkan.
+
 -- ``PromoController.cs``berfungsi untuk penambahan promo yang dipilih kedalam lis,mengembalikan nilai pada list,dan untuk menyimpan data yang telah ditambahkan.
 - Didalam folder model terdapat 4 kelas yaitu
 -- ``Item.cs`` berfungsi untuk menampung item
