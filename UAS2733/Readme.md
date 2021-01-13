@@ -19,20 +19,22 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 ![Simulasi3](Simulasi3.png)
 
 # Penjelasan 
-- Didalam folder Controller terdapat 3 kelas yaitu :
+Didalam folder Controller terdapat 3 kelas yaitu :
 
--``MainWindowController.cs`` yang berfungsi untuk  penambahan item dan promo,menghapus item dan promo, serta memperoleh list data dari item yang dibeli dan promo yang digunakan.
-
+- ``MainWindowController.cs`` yang berfungsi untuk  penambahan item dan promo,menghapus item dan promo, serta memperoleh list data dari item yang dibeli dan promo yang digunakan.
 - ``PenawaranController.cs`` berfungsi untuk penambahan item yang dipih kedalam list,mengembalikan nilai pada list,serta menyimpan data yang telah ditambahkan.
 - ``PromoController.cs``berfungsi untuk penambahan promo yang dipilih kedalam lis,mengembalikan nilai pada list,dan untuk menyimpan data yang telah ditambahkan.
 
 
-- Didalam folder model terdapat 4 kelas yaitu
+Didalam folder model terdapat 4 kelas yaitu
 
 
 - ``Item.cs`` berfungsi untuk menampung item
 -``KeranjangBuah.cs`` digunakan untuk menmpung item serta promo yang dipilih dan logiga perhitungan subtotal serta promo
-``private void calculateSubTotal()
+``
+
+
+    private void calculateSubTotal()
         {
             double subtotal = 0;
             double potongan = 0;
@@ -72,14 +74,16 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 
 
         }``
+        
  - ``Payment.cs`` digunakan untuk menampung total dari pembayaran item 
  - ``Promo.cs`` digunakan untuk menampung promo
  
  - Untuk mengatur logika dari tampilannya  terdapat:
  
  
- - `MainWindow.xaml.cs`` ada inisialisasi dan pembuatan beberapa instance serta kode untuk memasukkan data list promo dan item  kedalam listbox
- ``  public MainWindow()
+ - ``MainWindow.xaml.cs`` ada inisialisasi dan pembuatan beberapa instance serta kode untuk memasukkan data list promo dan item  kedalam listbox
+ ```csharp 
+   public MainWindow()
         {
             InitializeComponent();
 
@@ -94,9 +98,10 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 
             initializeView();
 
-        }``
+        }```
 - ``Penawaran.xaml.cs`` terdapat pembuatan object item yang akan ditambahkan kedalam listbox
-``        private void generateContentPenawaran()
+```csharp    
+   private void generateContentPenawaran()
         {
             Item drink1 = new Item("Coffe Late", 30000);
             Item drink2 = new Item("BlackTea", 20000);
@@ -118,7 +123,7 @@ Aplikasi ini difungsikan untuk melayani pemesanan menu dan menghitung total harg
 
             listPenawaran.Items.Refresh();
         }
-``
+```
 - ``PilihPromo.xaml.cs``terdapat pembuatan object promo yang akan ditambahkan kedalam list
 ``private void generateListPromo()
         {
