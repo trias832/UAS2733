@@ -130,8 +130,11 @@ Untuk mengatur logika dari tampilannya  terdapat:
             listPenawaran.Items.Refresh();
         }
 ```
-- PilihPromo.xaml.cs terdapat pembuatan object promo yang akan ditambahkan kedalam list
+
 <br>
+
+- PilihPromo.xaml.cs terdapat pembuatan object promo yang akan ditambahkan kedalam list
+
 ```csharp
     private void generateListPromo()
         {
@@ -147,3 +150,4 @@ Untuk mengatur logika dari tampilannya  terdapat:
         }
  ```
         
+<br>
