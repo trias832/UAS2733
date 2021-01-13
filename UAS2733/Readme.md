@@ -73,7 +73,7 @@ Didalam folder model terdapat 4 kelas yaitu
 
         }
         ```
-        
+ <br>       
  - ``Payment.cs`` digunakan untuk menampung total dari pembayaran item 
  - ``Promo.cs`` digunakan untuk menampung promo
  
@@ -97,7 +97,9 @@ Untuk mengatur logika dari tampilannya  terdapat:
 
             initializeView();
 
-        }```
+        }
+ ```
+ <br>
 - ``Penawaran.xaml.cs`` terdapat pembuatan object item yang akan ditambahkan kedalam listbox
 ```csharp    
    private void generateContentPenawaran()
@@ -124,6 +126,7 @@ Untuk mengatur logika dari tampilannya  terdapat:
         }
 ```
 - ``PilihPromo.xaml.cs``terdapat pembuatan object promo yang akan ditambahkan kedalam list
+<br>
 ```csharp
     private void generateListPromo()
         {
@@ -136,5 +139,6 @@ Untuk mengatur logika dari tampilannya  terdapat:
             promoController.addItem(promoNatal);
 
             DaftarPromo.Items.Refresh();
-        }```
+        }
+ ```
         
