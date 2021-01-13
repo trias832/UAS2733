@@ -30,10 +30,8 @@ Didalam folder model terdapat 4 kelas yaitu
 
 
 - ``Item.cs`` berfungsi untuk menampung item
--``KeranjangBuah.cs`` digunakan untuk menmpung item serta promo yang dipilih dan logiga perhitungan subtotal serta promo
-``
-
-
+- ``KeranjangBuah.cs`` digunakan untuk menmpung item serta promo yang dipilih dan logiga perhitungan subtotal serta promo
+```csharp
     private void calculateSubTotal()
         {
             double subtotal = 0;
@@ -73,12 +71,13 @@ Didalam folder model terdapat 4 kelas yaitu
             payment.updateTotal(subtotal, potongan);
 
 
-        }``
+        }
+        ```
         
  - ``Payment.cs`` digunakan untuk menampung total dari pembayaran item 
  - ``Promo.cs`` digunakan untuk menampung promo
  
- - Untuk mengatur logika dari tampilannya  terdapat:
+Untuk mengatur logika dari tampilannya  terdapat:
  
  
  - ``MainWindow.xaml.cs`` ada inisialisasi dan pembuatan beberapa instance serta kode untuk memasukkan data list promo dan item  kedalam listbox
@@ -125,7 +124,8 @@ Didalam folder model terdapat 4 kelas yaitu
         }
 ```
 - ``PilihPromo.xaml.cs``terdapat pembuatan object promo yang akan ditambahkan kedalam list
-``private void generateListPromo()
+```csharp
+    private void generateListPromo()
         {
             Model.Promo awalTahun = new Model.Promo(title: "Promo Awal Tahun Diskon 25%", discInPercent: 25);
             Model.Promo tebusMurah = new Model.Promo(title: "Promo Tebus Murah Diskon 30% atau max. 30.000", discInPercent: 30);
@@ -136,5 +136,5 @@ Didalam folder model terdapat 4 kelas yaitu
             promoController.addItem(promoNatal);
 
             DaftarPromo.Items.Refresh();
-        }``
+        }```
         
